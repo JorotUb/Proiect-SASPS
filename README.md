@@ -11,7 +11,7 @@ Proiectul face parte din activitatea de laborator aferentă disciplinei **„Des
 
 ---
 
-## 🎯 Obiective
+## Obiective
 
 - Implementarea unui **joc 2D simplu** în care utilizatorul controlează o dronă;
 - Utilizarea unui set de **design patterns** relevante pentru arhitectura jocului;
@@ -20,7 +20,7 @@ Proiectul face parte din activitatea de laborator aferentă disciplinei **„Des
 
 ---
 
-## 🧩 Design Patterns utilizate
+## Design Patterns utilizate
 
 | Pattern | Rol în aplicație | Descriere |
 |----------|------------------|------------|
@@ -31,7 +31,7 @@ Proiectul face parte din activitatea de laborator aferentă disciplinei **„Des
 | **Factory Method** | Crearea inamicilor și proiectilelor | Simplifică extinderea sistemului prin crearea dinamică a entităților. |
 
 ---
-## ⚙️ Tehnologii folosite
+## Tehnologii folosite
 
 - **Limbaj:** Java 17+  
 - **Framework grafic:** JavaFX (sau LibGDX)  
@@ -40,3 +40,8 @@ Proiectul face parte din activitatea de laborator aferentă disciplinei **„Des
 - **Instrumente analiză:** SonarLint, IntelliJ Metrics  
 
 ---
+## Rezultate așteptate
+
+- Arhitectură modulară și ușor de extins;
+- Cod mai clar și ușor de întreținut;
+- Demonstrarea beneficiilor aduse de design patterns în aplicațiile interactive.
