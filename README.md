@@ -1,34 +1,35 @@
-# 🛸 Sistem interactiv 2D de simulare și control al unei drone, bazat pe Design Patterns
+# 🧟‍♂️ Sistem 2D top-down de tip „Zombie Survivors” bazat pe Design Patterns
 
 ## 📖 Descriere generală
 
-Acest proiect reprezintă o aplicație 2D de tip joc, dezvoltată în **Java**, care simulează controlul unei drone.  
-Scopul proiectului este de a evidenția **impactul design pattern-urilor** asupra arhitecturii software, prin realizarea unei comparații între două versiuni ale aceluiași sistem:
-- o versiune **fără design patterns** (abordare procedurală, cod monolitic);
-- o versiune **cu design patterns**, ce respectă principiile OOP și promovează modularitatea și extensibilitatea codului.
+Acest proiect reprezintă o aplicație 2D de tip joc „top-down shooter”, dezvoltată în **Java**, în care jucătorul controlează un personaj ce trebuie să supraviețuiască valurilor de zombi.  
+Scopul proiectului este de a evidenția **impactul utilizării design pattern-urilor** în arhitectura software, prin compararea a două versiuni ale jocului:
 
-Proiectul face parte din activitatea de laborator aferentă disciplinei **„Design Patterns”** și este realizat în echipă.
+- o versiune **fără design patterns**, cu o arhitectură monolitică, dificil de extins;
+- o versiune **bazată pe design patterns**, modulară și extensibilă.
 
----
-
-## Obiective
-
-- Implementarea unui **joc 2D simplu** în care utilizatorul controlează o dronă;
-- Utilizarea unui set de **design patterns** relevante pentru arhitectura jocului;
-- Compararea celor două implementări (cu / fără patterns);
-- Analiza metricilor de calitate software: modularitate, complexitate, mentenabilitate.
+Proiectul este realizat în cadrul disciplinei **„Design Patterns”** și urmărește să demonstreze avantajele principiilor OOP în dezvoltarea aplicațiilor interactive.
 
 ---
 
-## Design Patterns utilizate
+## 🎯 Obiective
 
-| Pattern | Rol în aplicație | Descriere |
-|----------|------------------|------------|
-| **Command** | Controlul acțiunilor dronei | Fiecare acțiune (sus, jos, trage) este o comandă separată; facilitează extinderea sistemului de control. |
-| **Strategy** | Mișcarea dronei | Permite schimbarea dinamică a comportamentului (normal, agresiv, defensiv). |
-| **State** | Starea curentă a dronei | Modelează stările dronei: Idle, Moving, Attacking, Damaged, Crashed. |
-| **Observer** | Actualizarea interfeței grafice | Notifică automat componentele UI (energie, scor, status). |
-| **Factory Method** | Crearea inamicilor și proiectilelor | Simplifică extinderea sistemului prin crearea dinamică a entităților. |
+- Dezvoltarea unui **joc 2D top-down** simplu, cu entități dinamice (jucător, zombi, proiectile);
+- Aplicarea mai multor **design patterns clasice** pentru a îmbunătăți structura codului;
+- Analizarea comparativă a celor două versiuni ale aplicației;
+- Măsurarea metricilor de calitate software: modularitate, claritate, mentenabilitate, complexitate.
+
+---
+
+## 🧩 Design Patterns utilizate
+
+| Pattern | Rol în joc | Descriere |
+|----------|-------------|-----------|
+| **Command** | Controlul jucătorului | Fiecare acțiune (mișcare, atac, schimbare armă) este implementată ca o comandă separată. |
+| **Strategy** | Comportamentul inamicilor | Permite definirea diferitelor tipuri de AI (zombi lenti, rapizi, agresivi). |
+| **State** | Stările personajului jucător | Modelează stările Player-ului: Normal, Attacking, Injured, Dead. |
+| **Observer** | Actualizarea interfeței | Actualizează UI-ul la schimbarea scorului, sănătății sau numărului de inamici. |
+| **Factory Method** | Crearea inamicilor și a proiectilelor | Permite generarea dinamică a entităților cu caracteristici diferite. |
 
 ---
 ## Tehnologii folosite
